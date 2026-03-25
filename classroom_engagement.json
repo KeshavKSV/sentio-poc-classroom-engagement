@@ -1,0 +1,67 @@
+{
+  "_readme": "Your engagement_output.json must match this structure exactly. It slots directly into date_analysis['summary'] in the Sentio Mind pipeline. Do not add, remove, or rename any top-level key.",
+
+  "source": "p3_classroom_engagement",
+  "video": "video_sample_1.mov",
+  "date": "YYYY-MM-DD",
+  "session_duration_sec": 0.0,
+  "window_size_sec": 6,
+  "total_persons_detected": 0,
+  "overall_engagement_score": 0,
+
+  "peak_window": {
+    "window_id": 1,
+    "start_sec": 0.0,
+    "end_sec": 6.0,
+    "score": 0,
+    "dominant_gaze": "forward"
+  },
+
+  "trough_window": {
+    "window_id": 1,
+    "start_sec": 0.0,
+    "end_sec": 6.0,
+    "score": 0,
+    "dominant_gaze": "down"
+  },
+
+  "worst_3_windows": [
+    {
+      "window_id": 0,
+      "start_sec": 0.0,
+      "end_sec": 0.0,
+      "score": 0,
+      "thumbnail_collage_b64": "BASE64_JPEG_FACE_COLLAGE_FROM_THIS_WINDOW"
+    }
+  ],
+
+  "time_windows": [
+    {
+      "window_id": 1,
+      "start_sec": 0.0,
+      "end_sec": 6.0,
+      "engagement_score": 0,
+      "persons_count": 0,
+      "gaze_distribution": {
+        "forward": 0,
+        "down": 0,
+        "left": 0,
+        "right": 0,
+        "unknown": 0
+      },
+      "spatial_zones": {
+        "_note": "Keys are zone IDs like R1C1, R2C3. Values are avg engagement score for that zone in this window.",
+        "R1C1": 0,
+        "R2C3": 0
+      }
+    }
+  ],
+
+  "session_spatial_heatmap": {
+    "_note": "Average engagement per zone across the entire session.",
+    "R1C1": 0, "R1C2": 0, "R1C3": 0, "R1C4": 0, "R1C5": 0, "R1C6": 0,
+    "R2C1": 0, "R2C2": 0, "R2C3": 0, "R2C4": 0, "R2C5": 0, "R2C6": 0,
+    "R3C1": 0, "R3C2": 0, "R3C3": 0, "R3C4": 0, "R3C5": 0, "R3C6": 0,
+    "R4C1": 0, "R4C2": 0, "R4C3": 0, "R4C4": 0, "R4C5": 0, "R4C6": 0
+  }
+}
